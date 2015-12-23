@@ -15,22 +15,23 @@ import android.support.v4.graphics.drawable.DrawableWrapper;
 import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
+import android.widget.RatingBar;
 
 /**
  * Created by ukiy on 15/12/22.
  */
-public class RatingBar extends android.widget.RatingBar {
+public class BetterRatingBar extends RatingBar {
 
     private Drawable emptyDrawable;
     private Drawable fillDrawable;
     private int starSize;
 
-    public RatingBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public BetterRatingBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.RatingBar);
-        emptyDrawable = a.getDrawable(R.styleable.RatingBar_emptyDrawable);
-        fillDrawable = a.getDrawable(R.styleable.RatingBar_fillDrawable);
-        starSize = a.getDimensionPixelSize(R.styleable.RatingBar_starSize, 20);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.BetterRatingBar);
+        emptyDrawable = a.getDrawable(R.styleable.BetterRatingBar_emptyDrawable);
+        fillDrawable = a.getDrawable(R.styleable.BetterRatingBar_fillDrawable);
+        starSize = a.getDimensionPixelSize(R.styleable.BetterRatingBar_starSize, 20);
         if (emptyDrawable == null) {
             emptyDrawable = ContextCompat.getDrawable(getContext(), R.drawable.ic_love_empty);
         }
@@ -42,7 +43,7 @@ public class RatingBar extends android.widget.RatingBar {
         a.recycle();
     }
 
-    public RatingBar(Context context, AttributeSet attrs) {
+    public BetterRatingBar(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 

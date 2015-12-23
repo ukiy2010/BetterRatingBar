@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="RatingBar">
+    <declare-styleable name="BetterRatingBar">
         <attr name="fillDrawable" format="reference" />
         <attr name="emptyDrawable" format="reference" />
         <attr name="starSize" format="dimension" />

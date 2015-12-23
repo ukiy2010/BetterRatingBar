@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ukiy.ui.ratingbar.MainActivity">
 
-    <com.ukiy.ui.ratingbar.RatingBar
+    <com.ukiy.ui.ratingbar.BetterRatingBar
         android:id="@+id/rb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
